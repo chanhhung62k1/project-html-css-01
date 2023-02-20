@@ -47,12 +47,15 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+
 /*-----------------------header--------------------*/
 
-.header {
-    height: 100vh;
-    position: relative;
+.fixed-hear {
     background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    z-index: 1;
+    top: -26px;
 }
 
 .content {
@@ -62,7 +65,7 @@ a {
 }
 
 .nav-bar {
-    padding-top: 38px;
+    padding: 12px 0;
     display: flex;
     align-items: center;
 }
@@ -101,7 +104,11 @@ a {
 
 /*-----------------------hero--------------------*/
 
-.hero {
+.hero-wrap {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    background-color: #e6f0ff;
 }
 
 .hero .info {
@@ -657,7 +664,7 @@ a {
     background: #f9f9f9;
 }
 
-.footer-social-link + .footer-social-link {
+.footer .footer-social-item .footer-social-link + .footer-social-link {
     margin-left: 12px;
 }
 
